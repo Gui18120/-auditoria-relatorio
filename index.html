@@ -5,57 +5,57 @@
 <title>Relatório Técnico — Auditoria Sabor do Sul Pizzas</title>
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Segoe UI',Arial,sans-serif; background:#ebebeb; color:#111; padding-bottom:60px; }
-.page { max-width:800px; margin:40px auto; background:#fff; border:1px solid #ccc; }
-.capa { background:#111; color:#fff; padding:80px 48px; min-height:420px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+body { font-family:'Segoe UI',Arial,sans-serif; background:#050d1a; color:#f1f5f9; padding-bottom:60px; }
+.page { max-width:800px; margin:40px auto; background:#0c1628; border:1px solid rgba(59,130,246,0.2); box-shadow:0 25px 50px rgba(0,0,0,0.5); }
+.capa { background:linear-gradient(135deg,#1e3a8a 0%,#4c1d95 100%); color:#fff; padding:80px 48px; min-height:420px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; overflow:hidden; }
 .capa .logo { font-size:24px; font-weight:900; letter-spacing:4px; text-transform:uppercase; margin-bottom:4px; }
-.capa .logo-sub { font-size:11px; color:#888; letter-spacing:2px; text-transform:uppercase; margin-bottom:52px; }
+.capa .logo-sub { font-size:11px; color:#475569; letter-spacing:2px; text-transform:uppercase; margin-bottom:52px; }
 .capa h1 { font-size:30px; font-weight:800; line-height:1.2; margin-bottom:10px; }
-.capa .empresa { font-size:18px; color:#aaa; margin-bottom:52px; font-weight:300; letter-spacing:1px; }
-.capa .divider-line { width:40px; height:2px; background:#fff; margin:20px auto; opacity:0.3; }
-.capa .meta { font-size:12px; color:#777; line-height:2.2; letter-spacing:1px; }
+.capa .empresa { font-size:18px; color:rgba(255,255,255,0.5); margin-bottom:52px; font-weight:300; letter-spacing:1px; }
+.capa .divider-line { width:40px; height:2px; background:#0c1628; margin:20px auto; opacity:0.3; }
+.capa .meta { font-size:12px; color:rgba(255,255,255,0.4); line-height:2.2; letter-spacing:1px; }
 .body { padding:48px; }
 .section { margin-bottom:44px; }
-.section-label { font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#999; margin-bottom:8px; }
-.section h2 { font-size:20px; font-weight:800; margin-bottom:16px; border-bottom:1.5px solid #111; padding-bottom:10px; }
-.section h3 { font-size:15px; font-weight:700; margin-bottom:10px; color:#111; margin-top:24px; text-transform:uppercase; letter-spacing:1px; }
-.section p { font-size:14px; color:#444; line-height:1.9; margin-bottom:12px; }
-.divider { height:1px; background:#eee; margin:40px 0; }
+.section-label { font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#475569; margin-bottom:8px; }
+.section h2 { font-size:20px; font-weight:800; margin-bottom:16px; border-bottom:1px solid rgba(59,130,246,0.3); padding-bottom:10px; }
+.section h3 { font-size:15px; font-weight:700; margin-bottom:10px; color:#f1f5f9; margin-top:24px; text-transform:uppercase; letter-spacing:1px; }
+.section p { font-size:14px; color:#64748b; line-height:1.9; margin-bottom:12px; }
+.divider { height:1px; background:#1e293b; margin:40px 0; }
 .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }
-.info-item { background:#f7f7f7; padding:14px 16px; border-left:2px solid #111; }
-.info-item strong { display:block; font-size:10px; text-transform:uppercase; letter-spacing:2px; color:#999; margin-bottom:4px; }
-.info-item span { font-size:13px; color:#333; }
+.info-item { background:#111f35; padding:14px 16px; border-left:2px solid #8b5cf6; }
+.info-item strong { display:block; font-size:10px; text-transform:uppercase; letter-spacing:2px; color:#475569; margin-bottom:4px; }
+.info-item span { font-size:13px; color:#94a3b8; }
 table { width:100%; border-collapse:collapse; margin-top:16px; font-size:13px; }
-thead { background:#111; color:#fff; }
+thead { background:linear-gradient(135deg,#1e3a8a,#4c1d95); color:#fff; }
 thead th { padding:12px 14px; text-align:left; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:1px; }
 thead th:last-child { text-align:center; width:60px; }
-tbody td { padding:11px 14px; border-bottom:1px solid #eee; color:#444; vertical-align:top; line-height:1.5; }
+tbody td { padding:11px 14px; border-bottom:1px solid #1e293b; color:#64748b; vertical-align:top; line-height:1.5; }
 tbody td:last-child { text-align:center; font-weight:800; }
-tbody tr:nth-child(even) { background:#fafafa; }
-.media-row td { background:#f0f0f0; font-weight:700; border-top:2px solid #111; }
-.nota-m { color:#555; }
-.nota-b { color:#111; }
+tbody tr:nth-child(even) { background:#0d1f3a; }
+.media-row td { background:#112247; font-weight:700; border-top:2px solid #3b82f6; }
+.nota-m { color:#64748b; }
+.nota-b { color:#f1f5f9; }
 .matrix { border-collapse:collapse; width:100%; font-size:11px; margin-top:12px; }
-.matrix th,.matrix td { border:1px solid #ccc; padding:10px; text-align:center; vertical-align:middle; }
-.matrix th { background:#111; color:#fff; font-size:10px; text-transform:uppercase; letter-spacing:1px; }
-.risk-critico { background:#111; color:#fff; padding:3px 7px; font-size:10px; font-weight:700; display:inline-block; margin:2px; letter-spacing:1px; }
-.risk-alto { background:#555; color:#fff; padding:3px 7px; font-size:10px; font-weight:700; display:inline-block; margin:2px; letter-spacing:1px; }
-.risk-medio { background:#ccc; color:#111; padding:3px 7px; font-size:10px; font-weight:700; display:inline-block; margin:2px; letter-spacing:1px; }
-.rec-item { border-left:2px solid #111; background:#f7f7f7; padding:16px 20px; margin-bottom:10px; }
-.rec-num { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#999; margin-bottom:5px; }
+.matrix th,.matrix td { border:1px solid rgba(59,130,246,0.2); padding:10px; text-align:center; vertical-align:middle; }
+.matrix th { background:linear-gradient(135deg,#1e3a8a,#4c1d95); color:#fff; font-size:10px; text-transform:uppercase; letter-spacing:1px; }
+.risk-critico { background:linear-gradient(135deg,#1e3a8a,#4c1d95); color:#fff; padding:3px 7px; font-size:10px; font-weight:700; display:inline-block; margin:2px; letter-spacing:1px; }
+.risk-alto { background:#f59e0b; color:#fff; padding:3px 7px; font-size:10px; font-weight:700; display:inline-block; margin:2px; letter-spacing:1px; }
+.risk-medio { background:#1e293b; color:#f1f5f9; padding:3px 7px; font-size:10px; font-weight:700; display:inline-block; margin:2px; letter-spacing:1px; }
+.rec-item { border-left:2px solid #8b5cf6; background:#111f35; padding:16px 20px; margin-bottom:10px; }
+.rec-num { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#475569; margin-bottom:5px; }
 .rec-prob { font-size:14px; font-weight:700; margin-bottom:5px; }
-.rec-sol { font-size:13px; color:#555; line-height:1.6; margin-bottom:4px; }
-.rec-prazo { font-size:11px; font-weight:700; color:#111; letter-spacing:1px; }
+.rec-sol { font-size:13px; color:#64748b; line-height:1.6; margin-bottom:4px; }
+.rec-prazo { font-size:11px; font-weight:700; color:#f1f5f9; letter-spacing:1px; }
 .evidence-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px; }
-.evidence-item { border:1px solid #eee; padding:14px; }
-.ev-type { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#999; margin-bottom:6px; }
-.ev-desc { font-size:13px; color:#444; line-height:1.5; }
-.ev-placeholder { background:#f7f7f7; border:1px dashed #ccc; height:80px; display:flex; align-items:center; justify-content:center; font-size:11px; color:#bbb; margin-top:8px; letter-spacing:1px; }
-.alert-box { border-left:2px solid #111; background:#f7f7f7; padding:14px 18px; margin:16px 0; font-size:13px; color:#444; line-height:1.7; }
-.footer { background:#111; padding:24px 48px; color:#fff; display:flex; justify-content:space-between; align-items:center; }
-.footer p { font-size:12px; color:#777; }
+.evidence-item { border:1px solid #1e293b; padding:14px; }
+.ev-type { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#475569; margin-bottom:6px; }
+.ev-desc { font-size:13px; color:#64748b; line-height:1.5; }
+.ev-placeholder { background:#111f35; border:1px dashed #ccc; height:80px; display:flex; align-items:center; justify-content:center; font-size:11px; color:#334155; margin-top:8px; letter-spacing:1px; }
+.alert-box { border-left:2px solid #8b5cf6; background:#111f35; padding:14px 18px; margin:16px 0; font-size:13px; color:#64748b; line-height:1.7; }
+.footer { background:linear-gradient(135deg,#1e3a8a,#4c1d95); padding:24px 48px; color:#fff; display:flex; justify-content:space-between; align-items:center; }
+.footer p { font-size:12px; color:rgba(255,255,255,0.4); }
 .footer strong { color:#fff; letter-spacing:1px; }
-@media print { body{background:#fff} .page{margin:0;border:none} .capa{page-break-after:always} }
+@media print { body{background:#0c1628} .page{margin:0;border:none} .capa{page-break-after:always} }
 </style>
 </head>
 <body>
@@ -149,7 +149,7 @@ tbody tr:nth-child(even) { background:#fafafa; }
           <tr><td><strong>Prob. Baixa</strong></td><td></td><td><span class="risk-medio">Transfer. internacionais</span></td><td></td></tr>
         </tbody>
       </table>
-      <p style="margin-top:10px;font-size:11px;color:#888;letter-spacing:1px;">
+      <p style="margin-top:10px;font-size:11px;color:#475569;letter-spacing:1px;">
         <span class="risk-critico">CRÍTICO</span> Risco de sanção ANPD &nbsp;
         <span class="risk-alto">ALTO</span> Correção imediata &nbsp;
         <span class="risk-medio">MÉDIO</span> Melhoria recomendada
@@ -242,9 +242,9 @@ tbody tr:nth-child(even) { background:#fafafa; }
     <p style="color:#fff;font-weight:700;font-size:13px;">Nota Geral: 4.3 / 10</p>
   </div>
 </div>
-<nav style="position:fixed;bottom:0;left:0;right:0;background:#111;display:flex;justify-content:space-between;align-items:center;padding:14px 32px;z-index:999;border-top:1px solid #222;">
-  <a href="https://gui18120.github.io/auditoria-sumario/" style="color:#aaa;text-decoration:none;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">&#8592; Sumário</a>
-  <span style="color:#555;font-size:10px;letter-spacing:2px;text-transform:uppercase;">02 / 04 &nbsp;·&nbsp; Relatório Técnico</span>
-  <a href="https://gui18120.github.io/auditoria-dashboard/" style="color:#aaa;text-decoration:none;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">Dashboard &#8594;</a>
+<nav style="position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#1e3a8a,#4c1d95);display:flex;justify-content:space-between;align-items:center;padding:14px 32px;z-index:999;border-top:1px solid #222;">
+  <a href="https://gui18120.github.io/auditoria-sumario/" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">&#8592; Sumário</a>
+  <span style="color:#64748b;font-size:10px;letter-spacing:2px;text-transform:uppercase;">02 / 04 &nbsp;·&nbsp; Relatório Técnico</span>
+  <a href="https://gui18120.github.io/auditoria-dashboard/" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">Dashboard &#8594;</a>
 </nav>
 </body></html>
