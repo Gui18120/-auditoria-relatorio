@@ -56,82 +56,12 @@ tbody tr:nth-child(even) { background:#0d1f3a; }
 .footer p { font-size:12px; color:rgba(255,255,255,0.4); }
 .footer strong { color:#fff; letter-spacing:1px; }
 @media print {
-  @page { size: A4; margin: 1.5cm 1.8cm; }
+  @page { size: A4; margin: 0; }
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-
-  body { background: #fff !important; color: #111 !important; padding-bottom: 0; }
-  .page { max-width: 100%; margin: 0; border: none; box-shadow: none; background: #fff !important; }
+  body { background: #0c1628; padding-bottom: 0; }
+  .page { margin: 0; border: none; box-shadow: none; }
   nav { display: none !important; }
-
-  /* CAPA — mantém o gradiente escuro */
-  .capa {
-    background: linear-gradient(135deg, #1e3a8a 0%, #4c1d95 100%) !important;
-    color: #fff !important;
-    page-break-after: always;
-    min-height: 24cm;
-    justify-content: center;
-    margin: -1.5cm -1.8cm;
-    padding: 80px 60px;
-  }
-  .capa .logo-sub { color: #c4b5fd !important; }
-  .capa .empresa { color: rgba(255,255,255,0.75) !important; }
-  .capa .meta { color: rgba(255,255,255,0.65) !important; }
-
-  /* BODY — fundo branco, texto escuro */
-  .body { padding: 0; }
-  .section { margin-bottom: 24px; }
-  .section-label { color: #6b21a8 !important; }
-  .section h2 { color: #1e1b4b !important; border-bottom-color: #c4b5fd !important; font-size: 17px; }
-  .section h3 { color: #1e1b4b !important; }
-  .section p { color: #333 !important; font-size: 13px; margin-bottom: 7px; }
-
-  /* INFO GRID */
-  .info-item { background: #f5f3ff !important; border-left-color: #7c3aed !important; }
-  .info-item strong { color: #6b21a8 !important; }
-  .info-item span { color: #333 !important; }
-
-  /* TABELAS */
-  thead { background: linear-gradient(135deg, #1e3a8a, #4c1d95) !important; }
-  thead th { color: #fff !important; }
-  tbody td { color: #333 !important; border-bottom-color: #e2e8f0 !important; }
-  tbody tr:nth-child(even) { background: #f8f7ff !important; }
-  .media-row td { background: #ede9fe !important; color: #1e1b4b !important; border-top-color: #7c3aed !important; }
-  .nota-m { color: #555 !important; }
-  .nota-b { color: #111 !important; }
-
-  /* MATRIZ */
-  .matrix th { background: linear-gradient(135deg, #1e3a8a, #4c1d95) !important; color: #fff !important; }
-  .matrix th, .matrix td { border-color: #c4b5fd !important; }
-
-  /* BADGES */
-  .risk-critico { background: #1e3a8a !important; color: #fff !important; }
-  .risk-alto { background: #d97706 !important; color: #fff !important; }
-  .risk-medio { background: #64748b !important; color: #fff !important; }
-
-  /* RECOMENDAÇÕES */
-  .rec-item { background: #f5f3ff !important; border-left-color: #7c3aed !important; }
-  .rec-num { color: #6b21a8 !important; }
-  .rec-prob { color: #1e1b4b !important; }
-  .rec-sol { color: #374151 !important; }
-  .rec-prazo { color: #1e1b4b !important; }
-
-  /* EVIDÊNCIAS */
-  .evidence-item { border-color: #e2e8f0 !important; }
-  .ev-type { color: #6b21a8 !important; }
-  .ev-desc { color: #374151 !important; }
-  .ev-placeholder { background: #f8f7ff !important; border-color: #c4b5fd !important; color: #9ca3af !important; }
-
-  /* ALERT */
-  .alert-box { background: #f5f3ff !important; border-left-color: #7c3aed !important; color: #374151 !important; }
-
-  /* FOOTER */
-  .footer { background: linear-gradient(135deg, #1e3a8a, #4c1d95) !important; color: #fff !important; margin: 24px -1.8cm -1.5cm; padding: 18px 1.8cm; }
-  .footer p { color: rgba(255,255,255,0.7) !important; }
-
-  /* DIVIDER */
-  .divider { background: #e2e8f0 !important; margin: 18px 0; }
-
-  /* QUEBRAS DE PÁGINA */
+  .capa { page-break-after: always; }
   .page-break { page-break-before: always; }
 }
 </style>
